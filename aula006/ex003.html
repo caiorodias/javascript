@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(44, 64, 117);
+            color: whitesmoke;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script> 
+        var n1 = Number(window.prompt("Digite um número"))/* O window.prompt sempre entrega uma string */
+        var n2 = Number(window.prompt("Digite outro número"))
+        /* Number.parseInt serve para converter o string em numero inteiro
+           Number.parseFloat serve para converter o string em numero decimal
+           Porém se quiser que o próprio JS decida se é inteiro ou decimal, basta usar Number(n) */
+        var s = n1 + n2
+        window.alert(`A soma dos valores entre ${n1} e ${n2} é igual a ${s}`)
+        /* Para converter para String ficaria + 
+        String(S) */
+        /* + Concatenação se for string + string
+        + para somar só vai funcionar se as variaveis forem number + number*/
+         
+        /* ----------------------------------------------
+        ESSA FORMA É MAIS FÁCIL DO QUE FAZER CONCATENAÇÃO TODA HORA COM O SINAL DE +
+
+        > var nome = 'Caio Dias'
+                
+        > var idade = '26'
+                
+        > var nota = '8.2'
+        
+        `O aluno ${nome}, com ${idade}, tirou a nota ${nota}.` (aqui é com crase)
+        'O aluno Caio Dias, com 26, tirou a nota 8.2.' */
+    </script>
+</body>
+</html>
+
+<!-- Outros comandos
+    var.length = diz quantos caracteres tem em uma variavel
+    var.toUpperCase() = Joga tudo para letras maiúsculas
+    var.toLowerCase() = Joga tudo para letras minúsculas
+-->
