@@ -41,4 +41,80 @@
 
      > n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
     'R$ 1.545,50' 
+
+    OPERADORES ARITMÉTICOS :
+    + SOMA
+    - SUBTRAÇÃO
+    * MULTIPLICAÇÃO
+    / DIVISÃO
+    % RESTO (PAR 0 | ÍMPAR 1)
+    ** POTENCIAÇÃO
+
+    --------------------------------------- 
+
+    PRECEDÊNCIA DOS OPERADORES 
+    ()
+    **
+    * / %
+    + - 
+
+    AUTO-ATRIBUIÇÕES (vai valer o valor que a última linha definir)
+    var n=3     (n vale 3)
+    n= n+4      (n vale 7)
+    n= n-5       (n vale 2)
+    
+    OU PODEMOS FAZER ASSIM
+    var n = 3
+    n+= 2
+    >5
+
+    SE FOR ADICIONAR SÓ UM
+    AO INVES DE FAZER
+    var x= 2
+    x+= 1
+    ou
+    x-= 1
+
+    PODE SER 
+
+    x++
+    ou
+    x-- 
 -->
+
+<!-- 
+    OPERADORES RELACIONAIS
+
+    > maior q
+    < menor q
+    >= maior igual
+    <= menor igual
+    == igual (não difere se é string ou inteiro 5 é igual a '5')
+    != diferente 
+    === idêntico (difere até se é string e inteiro 5 != '5')
+    !== desigual restrito (mesma ideia do == e ===)
+ -->
+
+ <!-- 
+    OPERADORES LÓGICOS
+
+    ! negação NOT
+    && conjunção AND
+    || disjunção OR
+  -->
+
+  <!--
+     HIERARQUIA
+    
+    ARITMÉTICOS () ** / ...
+    RELACIONAIS > < >= ... (da esquerda para direita)
+    LÓGICOS ! > && > || nessa ordem
+ -->
+
+ <!-- 
+    OPERADOR TERNÁRIO
+    ?
+    :
+    EX: média >= 7.0 ? "aprovado" : "reprovado"
+    média >= 7.0  é um teste lógico
+  -->
