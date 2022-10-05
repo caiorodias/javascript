@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(102, 16, 16);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        
+        /* o 0 quer dizer que é o primeiro parágrafo */
+        var corpo = window.document.body
+        var p1= window.document.getElementsByTagName("p")[1]
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+        /* var d= document.getElementsById('msg')/* por ID */
+        /* d.style.background = 'blue'
+        d.innerText = 'Estou aguardando...' */
+        /* p1.style.color ='blue' */
+        /* window.alert(p1.innerHTML) */
+        /* window.document.write('Está escrito assim: ' + p1.innerText) */
+
+        /* É POSSÍVEL SELECIONAR POR:
+            MARCA getElementsByTagName()
+            ID getElementsById()
+            NOME getElementsByName()
+            CLASSE getElementsByClassName()
+            SELETOR querySelector() / querySelectorAll()
+        */
+       
+    </script>
+    <!--
+        Tudo dentro do JS está na janela chamada window
+        
+        Dentro do window temos: location, document e history, entre outros.
+        
+        Dentro de document temos: html
+
+        Dentro de HTML temos 2 child: head e body
+        (consequentemente o html é parent de head e body)
+    -->
+</body>
+</html>
