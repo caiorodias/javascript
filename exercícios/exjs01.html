@@ -68,12 +68,19 @@
         var hora = agora.getHours()
         var res = document.querySelector('p#hora')
         var cor = document.querySelector('body')
+        var img = document.querySelector('div#img')
         
         res.innerHTML = `<p>Agora são <strong>${hora} horas</strong>.</p>`
 
         if (hora < 12) {
-            cor.style = 'background-image: url()
+            cor.style = 'background-color: #f5bfaa'
+            img.style = 'background-img: url(imagens/manhã.jpg)'
+        } else if (hora < 18) {
+            cor.style = 'background-color: #ee7d50'
+        } else {
+            cor.style = 'background-color: #2f3186'
         }
+
     </script>
 </body>
 </html>
