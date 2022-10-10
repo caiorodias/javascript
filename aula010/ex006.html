@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background-color: rgb(27, 95, 27);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()"
+    onmouseout="sair()">
+    <!-- Os métodos dentro da tag não são necessárias pq foram criadas as eventListener -->
+    <!-- one click é o método que foi chamado, clicar é a ação -->
+        Interaja...
+    </div>
+
+    <script>
+        var area = document.querySelector('div#area');
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseleave', sair)
+        /* Colocando esse listener posso tirar os métodos de dentro da tag do html */
+
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar(){
+            area.innerText = 'Entrou!'            
+        }
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

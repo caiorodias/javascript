@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <strong>Nacionalidade: </strong><input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Clique aqui" onclick="mostrar()">
+    <div id="res"></div>
+
+    <script>
+        function mostrar() {
+            var nac = document.querySelector('input#nacionalidade')
+            var res = document.querySelector('div#res')
+            var respNac = (nac.value)
+            res.innerHTML = `Seu país é <strong>${respNac}</strong>`
+            if (respNac == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro(a)</strong></p>`
+            } else {
+                res.innerHTML += `<p>Sua nacionalidade é <strong>Estrangeira</strong></p>`
+            }
+        }
+        
+    </script>
+</body>
+</html>
