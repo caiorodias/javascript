@@ -33,8 +33,8 @@
             margin: auto;
             border-radius: 50px 0px;
             background-color: white;
-            width: 360px;
-            height: 550px;
+            width: 350px;
+            height: 543px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
         }
 
@@ -54,6 +54,15 @@
             margin-top: 80px;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.74);
         }
+
+        body > p {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            margin-top: 3px;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -63,23 +72,26 @@
         <div id="img"></div>
     </div>
 
+    <p>@caiorodias</p>
+
     <script>
         var agora = new Date()
         var hora = agora.getHours()
         var res = document.querySelector('p#hora')
         var cor = document.querySelector('body')
         var img = document.querySelector('div#img')
-        
+
         res.innerHTML = `<p>Agora são <strong>${hora} horas</strong>.</p>`
 
         if (hora < 12) {
             cor.style = 'background-color: #f5bfaa'
-            img.style = 'background-img: url(imagens/manhã.jpg)'
+            img.style.backgroundImage = `url(${url})`
         } else if (hora < 18) {
             cor.style = 'background-color: #ee7d50'
         } else {
             cor.style = 'background-color: #2f3186'
         }
+    
 
     </script>
 </body>
