@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do dia</title>
     <style>
-        /* 
-        Cores:
-        manhã: #f5bfaa
-        tarde: #ee7d50
-        noite: #2f3186
-         */
+        
+        /* Cores:
+        manhã: #f5f39886
+        tarde: #da9e3186
+        noite: #2f3186 */
+        
         
         body {
             background-color: #2f863b;
@@ -21,7 +21,7 @@
             font-family: 'Courier New', Courier, monospace;
             text-align: center;
             color: white;
-            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.527);
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.562);
         }
 
         div#img {
@@ -47,7 +47,6 @@
         }
 
         div#fora > div#img {
-            background-color: black;
             width: 300px;
             height: 300px;
             margin: auto;
@@ -60,38 +59,46 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: white;
             margin-top: 3px;
+            font-style: italic;
         }
+
+        
 
         
     </style>
 </head>
-<body>
+<body onload='carregar()'>
     <h1>Hora do Dia</h1>
     <div id="fora">
         <p id="hora"></p>
-        <div id="img"></div>
+    <div>
+            <img id="img" style="border-radius: 50%" width="250" height="250" src="manha.png" alt="Foto do Horário">
+     </div>
     </div>
 
     <p>@caiorodias</p>
 
     <script>
-        var agora = new Date()
-        var hora = agora.getHours()
+    function carregar(){  
         var res = document.querySelector('p#hora')
         var cor = document.querySelector('body')
         var img = document.querySelector('div#img')
+        var agora = new Date()
+        var hora = agora.getHours()
 
         res.innerHTML = `<p>Agora são <strong>${hora} horas</strong>.</p>`
 
-        if (hora < 12) {
-            cor.style = 'background-color: #f5bfaa'
-            img.style.backgroundImage = `url(${url})`
-        } else if (hora < 18) {
-            cor.style = 'background-color: #ee7d50'
+        if (hora >= 0 && hora < 12) {
+            cor.style = 'background-color: #f5f39886'
+            img.src = 'manhã.jpg'
+        } else if (hora >= 12 && hora < 18) {
+            cor.style = 'background-color: #da9e3186'
+            img.src = 'tarde.jpg'
         } else {
             cor.style = 'background-color: #2f3186'
+            img.src = 'noite.jpg'
         }
-    
+    }
 
     </script>
 </body>
