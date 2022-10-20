@@ -6,5 +6,5 @@ function calcular() {
     var res = document.querySelector('div#res')
     var sub = anoAtual - ano            
 
-    res.innerHTML = `<p>Detectamos uma de <strong>${sub} anos</strong> de idade</p>`
+    res.innerHTML = `<p>Detectamos uma idade de <strong>${sub} anos</strong></p>`
 }
