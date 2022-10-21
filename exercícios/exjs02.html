@@ -12,19 +12,26 @@
         <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <div id='msg'>
-            <p><strong>Ano de Nascimento:</strong> <input type="number" name="ano" id="ano" min="0"></p>
+        <div id='solicitacoes'>
             <p>
-                <strong>Sexo:</strong> <input type="radio" name="sexo" id="isxmas" value="M">
-                <label for="isxmas">Masculino</label>
-                <input type="radio" name="sexo" id="isxfem" value="F">
-                <label for="ixsfem">Feminino</label>
+            <strong>Nome:</strong> 
+            <input type="text" name="nome" id="nome" required></p>
+            <p><strong>Ano de Nascimento:</strong> 
+            <input type="number" name="ano" id="ano" min="0" max="2022" required>
             </p>
-            <input type="button" value="Verificar" onclick="calcular()">
+            <p>
+                <strong>Sexo:</strong> 
+                <input type="radio" name="sexo" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
         </div>
-            <div id=></div>
-            <div id="img"></div>
-        
+        <div id="botao">
+        <input type="button" value="Verificar" id="botao" onclick="verificar()">
+        </div>
+            <div id='msg'>Insira seus dados</div>
+            <div id="img"><img id="imagem" src="imagens/pessoas/user.png" alt="indefinido"></div>
     </section>
     <footer>
         @CAIORODIAS
