@@ -52,22 +52,6 @@ function verificar() {
         }
         res.innerHTML = `<p>Olá ${nome.value}, detectamos <strong>${genero}</strong> com <strong>${idade} anos</strong> de idade.</p>`
         res.appendChild(img)
-
-    /* if (sub >= 0 && sub <= 16 || sex == 0) {
-        img.src= 'imagens/pessoas/menino.jpg'
-    } else if (sub >= 0 && sub <= 16 || sex == 1) {
-        img.src= 'imagens/pessoas/menina.jpg'
-    } else if (sub > 16 && sub < 60) {
-        img.src= 'imagens/pessoas/adulto.jpg'
-    } else {
-        img.src= 'imagens/pessoas/idoso.jpg'
-    } */
     }
 
 }
-
-/*
-Criança:<=16
-Adulto:16>x<60
-Idoso: >=60
-*/
