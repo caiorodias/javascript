@@ -47,6 +47,25 @@ section > div#img > img#imagem:hover {
     transform: scale(1.15);
 }
 
+section > div#dados > p {
+    text-align: start;
+    margin: 10px;
+}
+
+section > div#dados > p#botao {
+    text-align: center;
+}
+
+div#dados > p#botao > input#botao {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    background-color: rgb(86, 86, 201);
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px 10px;
+}
+
 div#botao > input#botao {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.8em;

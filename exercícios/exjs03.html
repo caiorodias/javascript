@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="javascript/scripts3.js">
 </head>
 <body>
     <header>
@@ -13,9 +14,17 @@
     </header>
     <section>
         <div id="dados">
+            <p>Início: <input type="number" name="inicio" id="inicio"></p>
+            <p>Fim: <input type="number" name="fim" id="fim"></p>
+            <p>Intervalo: <input type="number" name="intervalo" id="intervalo"></p>
             <!-- dados e botão contar -->
         </div>
-        <div id="msg"></div>
+        <div id="botao">
+            <input id="botao" type="button" value="Contar" oneclick="contar()">
+        </div>
+        <div id="msg">
+            Contando
+        </div>
     </section>
     <footer>
         @CAIORODIAS
