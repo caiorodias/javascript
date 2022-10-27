@@ -10,7 +10,7 @@ console.log (`O array tem ${num.length} itens.`)
 
 console.log (`O item ${num[2]} na 3ª posição do array`)
 
-let pos = num.indexOf (13)
+let pos = num.indexOf (5)
 if (pos == -1) {
     console.log (`O valor não foi encontrado!`)
 } else {
