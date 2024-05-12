@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <h3 id="datahoje"></h3>
+        <h2 id="nome"></h2>
+        <script>
+            var dataAtual = new Date();
+            var ano = dataAtual.getFullYear();
+            var mes = dataAtual.getMonth() +1;
+            var dia = dataAtual.getDay();
+
+            if(dia < 10){
+                dia = "0"+dia;
+            };
+            if(mes < 10){
+                mes = "0"+mes;
+            };
+
+            var dataFormatada = dia + "/" + mes + "/" + ano;
+
+            var nome = prompt("Olá, qual seu nome?");
+            var anoNiver = prompt("Qual o ano em que você nasceu?");
+            var mesNiver = prompt("Qual o número do mês que você nasceu?");
+            var diaNiver = prompt("Qual o dia em que você nasceu?");
+
+            if(anoNiver > ano){
+                alert("Você ainda nem nasceu!")
+            }else{
+                idade = ano - anoNiver;
+            }
+
+            if(mes < mesNiver && dia < diaNiver){
+                idade = idade - 1;
+            }
+            console.log(idade)
+
+
+            document.getElementById("datahoje").innerHTML = "A data de hoje é " + dataFormatada;
+            document.getElementById("nome").innerHTML = "Olá, "+ nome+" sua idade é de "+ idade +" anos";
+            
+        </script>
+    </body>
+</html>
