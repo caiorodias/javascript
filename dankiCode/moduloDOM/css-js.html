@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <div id="box"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+    </body>
+    <script>
+        
+        // Estilizado através do ID
+        var el = document.getElementById('box');
+        el.style.width = 100;
+        el.style.height = 100;
+        el.style.backgroundColor = 'red';
+        el.style.marginLeft = 200;
+        el.style.border = 'solid'
+
+        // Estilizado através da Class
+        var containers = document.getElementsByClassName('container');
+
+        el2 = containers[0];
+
+        el2.style.width = 200;
+        el2.style.height = 200;
+        el2.style.backgroundColor = 'green';
+        el2.style.marginLeft = 100;
+        el2.style.border = 'solid'
+
+    </script>
+</html>

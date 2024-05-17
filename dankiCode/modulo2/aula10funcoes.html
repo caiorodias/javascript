@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script>
+            // Lembrando que uma função dentro da classe é chamada de método.
+
+            class Animal {
+                constructor(nome){
+                    this.nome = nome;
+                }
+
+                printNome(){
+                    return this.nome;
+                }
+            }
+
+
+            // Com o extends a class herda a outra classe, mas tambem pode adicionar componentes exclusivos
+
+            class Cachorro extends Animal{
+                constructor(nome){
+                    super(nome);
+                    this.raca = "pug"
+                }
+            
+
+                printRaca(){
+                    return this.raca;
+                }
+
+            }
+            cachorro = new Cachorro('Thor');
+            
+            alert(cachorro.printNome());
+        </script>
+    </body>
+</html>
