@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <style>
+            .conteudo h2 span {
+               font-size: 13px;
+               cursor: pointer; 
+            }
+            
+            .conteudo p{
+                overflow: hidden;
+                height: 10px;
+                transition: 1s;
+            }
+
+            .mostrar{
+                height: 200px !important;
+            }
+        </style>
+        <div class="conteudo">
+            <h2>Título do conteúdo <span>Ver mais!</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae distinctio repellat, suscipit consequuntur, possimus, beatae ipsam architecto eaque blanditiis totam laborum id sit nulla omnis aperiam officia quod eligendi cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint aperiam tempora totam eum natus soluta eligendi debitis alias, laboriosam veniam magnam commodi fugiat, neque corrupti mollitia, saepe nihil deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur officiis illum at perspiciatis, nam nesciunt, dolorum culpa vel, fugit velit consequatur quaerat ratione. Beatae sit omnis possimus temporibus eum Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minima distinctio ex laudantium consequatur qui fugiat ipsa obcaecati aut molestias ratione fugit aliquam modi dolore dolorum quas facilis quos harum!</voluptatibus></p>
+        </div>
+        <script>
+            var span = document.querySelector('.conteudo span');
+
+            span.addEventListener('click', function(){
+                var conteudo = document.querySelector('.conteudo p');
+
+                if(conteudo.classList.contains('mostrar')){
+                    span.innerHTML = 'ver mais!';
+                    conteudo.classList.remove('mostrar');
+                }else{
+                    span.innerHTML = 'Ocultar';
+                    conteudo.classList.add('mostrar');
+                }
+            })
+        </script>
+    </body>
+</html>
